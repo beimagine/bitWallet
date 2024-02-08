@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+.Dsection {
+    background: linear-gradient(120.95deg, #531A6B 0%, #279379 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem;
+}
+.DsectionText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.Dsection h1 {
+    font-size: 2.95rem;
+    font-weight: 900;
+    background: linear-gradient(89.94deg, #00FFE0 0.04%, #FFFFFF 99.94%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.Dsection p {
+    font-size: 1.65rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    font-family: "kodchasan", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.buttons button {
+    background: linear-gradient(90deg, #F800B2 -17.16%, #0500FF 114.18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: linear-gradient(90deg, #0500FF -18.41%, #F800B2 113.18%);
+}
+
+.Btext {
+    margin-left: 2rem;
+}
+
+.browserButton {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #F800B2 -17.16%, #0500FF 114.18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2.2rem;
+    cursor: pointer;
+}
+
+.browserButton:hover {
+    background: linear-gradient(90deg, #0500FF -18.41%, #F800B2 113.18%);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .DsectionText{
+        width: 90%;
+    }
+    .Dsection h1{
+        font-size: 1.5rem;
+    }
+    .Dsection p{
+        font-size: 0.9rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .browserButton{
+        padding: 1rem 0.8rem;
+    }
+}
