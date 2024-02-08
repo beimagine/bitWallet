@@ -39,11 +39,10 @@
 
 @media only screen and (max-width : 768px) {
     .footerDiv {
-        padding: 0 ;
         display: none;
     }
 
-    #footerLogo {
+    /* #footerLogo {
         text-align: center ;
     }
 
@@ -51,7 +50,7 @@
         text-align: center ;
         display: block ;
         margin-top: 1rem;
-    }
+    } */
 
     .copyrightText{
         font-size: 0.8rem;

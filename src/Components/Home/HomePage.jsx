@@ -53,6 +53,9 @@ const HomePage = () => {
             <Features />
         </Slide>
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <Download />
         <br></br>
         <br></br>

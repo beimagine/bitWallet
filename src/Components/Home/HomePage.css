@@ -71,6 +71,7 @@
 
 .dIcon {
     display: flex;
+    width: 20px;
 }
 
 .image {
@@ -171,6 +172,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .vision{
+        padding: 4rem 0rem 8rem 0rem;
+    }
     .title {
         font-size: 1.5rem;
     }
@@ -185,7 +190,7 @@
 
     .vision-text button {
         width: 60%;
-        height: 7vh;
+        height: 5vh;
     }
 
     .main1Img{

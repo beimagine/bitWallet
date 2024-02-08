@@ -2,7 +2,7 @@
   border-radius: 102px;
   width: 90%;
   padding: 6rem 6rem;
-  margin: auto 5rem 12rem;
+  margin: 5rem ;
   background-color: #6E3289;
 
 }
@@ -112,13 +112,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .box {
-    width: 90%;
-    margin-bottom: 30%;
-  }
-
+  
   .card {
-    width: 90%;
+    width: 100%;
   }
 
   .featuresTitle {
@@ -133,7 +129,7 @@
 
   .box {
     width: 100%;
-    margin: 0rem;
+    margin: 0rem 0rem 4rem 0rem;
     border-radius: 0px;
     background-color: transparent;
   }
@@ -141,6 +137,7 @@
   .allcards{
     display: flex;
     flex-direction: column;
+    gap: 3rem;
   }
 
   .cardTitle{
@@ -157,6 +154,7 @@
 
   .box{
     width: 95%;
-    margin: auto;
+    margin: auto ;
+    
   }
 }

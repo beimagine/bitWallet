@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import { Menu } from '@mui/icons-material';
 import { useRouter, usePathname } from 'next/navigation';
@@ -9,10 +9,14 @@ const Navbar = () => {
 
   const router = useRouter();
   const pathname = usePathname();
-  console.log(pathname)
+  console.log(pathname);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prevShowMenu) => !prevShowMenu);
+  };
+
+  const handleNavButtonClick = () => {
+    setShowMenu(false);
   };
 
   return (
@@ -23,15 +27,26 @@ const Navbar = () => {
           alt="Logo"
         />
       </div>
-      <div className='nav-items' >
-        {
-          pathname === '/download' ?
-            <button onClick={() => router.push('/')}>Home</button>
-            :
-            <button onClick={() => router.push('/download')}>Download</button>
-        }
+      <div className='nav-items'>
+        {pathname === '/download' ? (
+          <button onClick={() => { router.push('/'); handleNavButtonClick(); }}>Home</button>
+        ) : (
+          <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}>Download</button>
+        )}
       </div>
-      <Menu className="menu-icon" onClick={toggleMenu} />
+      <div className="menu-icon" onClick={toggleMenu}>
+        <Menu />
+      </div>
+      {/* Render the menu based on the showMenu state */}
+      {showMenu && (
+        <div className="mobile-menu">
+        {pathname === '/download' ? (
+          <button onClick={() => { router.push('/'); handleNavButtonClick(); }}>Home</button>
+        ) : (
+          <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}>Download</button>
+        )}
+        </div>
+      )}
     </div>
   );
 };
