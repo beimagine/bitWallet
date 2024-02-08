@@ -47,11 +47,10 @@ const titleColors = [
 const Features = () => {
     return (
         <>
-            <Typography variant="h2" className='featuresTitle'>Why choose BitWallet</Typography>
-            <Typography
+            <h1 className='featuresTitle'>Why choose BitWallet</h1>
+            <p
                 className='featuresPara'
-                variant="body1"
-                >Bitwallet ensures secure storage and easy management of digital assets, providing users with peace of mind and convenient access to their cryptocurrencies.</Typography>
+            >Bitwallet ensures secure storage and easy management of digital assets, providing users with peace of mind and convenient access to their cryptocurrencies.</p>
             <div className='box'>
 
                 <div className='allcards'>
@@ -60,7 +59,7 @@ const Features = () => {
                             <div className='cardWrapper'>
                                 <img className='visible-image' src={card.imageSrc} />
                                 <div className='cardInfo'>
-                                    <h3 className={`cardTitle ${index === 3 || index === 4 ? 'special-cardTitle' : ''}`} style={{ background: titleColors[index],color:'transparent', WebkitBackgroundClip:'text' }} >{card.title}</h3>
+                                    <h3 className={`cardTitle ${index === 3 || index === 4 ? 'special-cardTitle' : ''}`} style={{ background: titleColors[index], color: 'transparent', WebkitBackgroundClip: 'text' }} >{card.title}</h3>
                                     <p className='cardPara'>{card.para}</p>
                                 </div>
                             </div>

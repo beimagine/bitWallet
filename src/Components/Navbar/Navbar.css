@@ -35,14 +35,12 @@
     border: 2px solid #ff00b8;
     background: linear-gradient(90deg, #0066FF 0%, #FF00B8 100%);
     color: transparent;
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     transform: scale(1.05);
 }
 
-
 .menu-icon {
     display: none;
-    cursor: pointer;
 }
 
 /* Media Queries for responsiveness */
