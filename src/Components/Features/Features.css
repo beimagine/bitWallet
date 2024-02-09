@@ -4,7 +4,9 @@
   padding: 6rem 6rem;
   margin: 5rem ;
   background-color: #6E3289;
-
+  border: 1px solid #B000FF;
+  outline: 1px solid transparent;
+  box-shadow: 0 0 15px 5px #B000FF;
 }
 
 .featuresTitle {
@@ -114,6 +116,7 @@
 .card:hover .visible-image {
   opacity: 0.2;
 }
+
 
 @media only screen and (max-width: 768px) {
   
