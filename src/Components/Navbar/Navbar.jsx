@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Menu } from '@mui/icons-material';
+import { KeyboardReturn } from '@mui/icons-material';
 import { useRouter, usePathname } from 'next/navigation';
 import './Navbar.css';
 
@@ -35,10 +35,14 @@ const Navbar = () => {
         )}
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
-        <Menu />
+      {pathname === '/download' ? (
+          <button className='returnIcon' onClick={() => { router.push('/'); handleNavButtonClick(); }}><KeyboardReturn /></button>
+        ) : (
+        <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}><img src='/assets/download-Icon.png'/></button>
+        )}
       </div>
       {/* Render the menu based on the showMenu state */}
-      {showMenu && (
+      {/* {showMenu && (
         <div className="mobile-menu">
         {pathname === '/download' ? (
           <button onClick={() => { router.push('/'); handleNavButtonClick(); }}>Home</button>
@@ -46,7 +50,7 @@ const Navbar = () => {
           <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}>Download</button>
         )}
         </div>
-      )}
+      )} */}
     </div>
   );
 };
