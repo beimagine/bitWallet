@@ -5,33 +5,39 @@ const cardData = [
     {
         imageSrc: '/assets/F1.png',
         title: "Easy to use",
-        para: "Effortless and intuitive, designed for a seamless user experience"
+        para: "Effortless and intuitive, designed for a seamless user experience",
+        classname : "cardT1"
     },
     {
         imageSrc: '/assets/F2.png',
         title: "Data Protection",
-        para: "Effortless and intuitive, designed for a seamless user experience"
+        para: "Effortless and intuitive, designed for a seamless user experience",
+        classname : "cardT2"
     },
     {
         imageSrc: '/assets/F3.png',
         title: "Decentralized",
-        para: "Effortless and intuitive, designed for a seamless user experience"
+        para: "Effortless and intuitive, designed for a seamless user experience",
+        classname : "cardT3"
     },
     {
         imageSrc: '/assets/F4.png',
         title: "Verified and Secured",
-        para: "Trustworthy and guaranteed for your security"
+        para: "Trustworthy and guaranteed for your security",
+        classname : "cardT4"
 
     },
     {
         imageSrc: '/assets/F5.png',
         title: "Robust Infrastructure",
-        para: "Effortless and intuitive, designed for a seamless user experience"
+        para: "Effortless and intuitive, designed for a seamless user experience",
+        classname : "cardT5"
     },
     {
         imageSrc: '/assets/F6.png',
         title: "Support Assets",
-        para: "Effortless and intuitive, designed for a seamless user experience"
+        para: "Effortless and intuitive, designed for a seamless user experience",
+        classname : "cardT6"
     },
 ];
 
@@ -59,7 +65,7 @@ const Features = () => {
                             <div className='cardWrapper'>
                                 <img className='visible-image' src={card.imageSrc} />
                                 <div className='cardInfo'>
-                                    <h3 className={`cardTitle ${index === 3 || index === 4 ? 'special-cardTitle' : ''}`} style={{ background: titleColors[index], color: 'transparent', WebkitBackgroundClip: 'text' }} >{card.title}</h3>
+                                    <h3 className={`cardTitle ${card.classname}`} style={{ background: titleColors[index], color: 'transparent', WebkitBackgroundClip: 'text' }} >{card.title}</h3>
                                     <p className='cardPara'>{card.para}</p>
                                 </div>
                             </div>

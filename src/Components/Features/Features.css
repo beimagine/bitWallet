@@ -75,8 +75,12 @@
   transform: translateY(-50%);
 }
 
-.card:hover .special-cardTitle {
+.card:hover .cardT4 {
   transform: translateY(-30%);
+}
+
+.card:hover .cardT5{
+  transform: translateY(-15%);
 }
 
 .cardTitle {
@@ -90,7 +94,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.special-cardTitle {
+.cardT4 , .cardT5 {
   transform: translateY(150%);
 }
 
@@ -141,13 +145,49 @@
   }
 
   .cardTitle{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .cardPara{
     font-size: 0.8rem;
   }
 
+}
+
+@media only screen and (max-width: 460px) {
+
+  .box{
+    width: 100%;
+  }
+
+  .cardInfo{
+    padding: 1rem;
+  }
+
+  .cardTitle{
+    font-size: 1.1rem;
+    transform: translateY(230%);
+  }
+
+  .cardPara{
+    font-size: 0.6rem;
+  }
+
+  .cardT4 , .cardT5{
+    transform: translateY(100%);
+  }
+
+}
+
+@media only screen and (max-width: 379px) {
+
+  .cardTitle{
+    transform: translateY(50%);
+  }
+
+  .card:hover .cardTitle{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1500px) {

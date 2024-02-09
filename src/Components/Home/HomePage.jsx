@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import Link from "next/link";
 import "./HomePage.css"
 import Features from "../Features/Features";
 import Download from "../Download/Download";
@@ -11,14 +11,18 @@ const HomePage = () => {
                 <h1 className="title">Give your NFTs a home <br></br>with <span className="bitWord1">BitWallet</span></h1>
                 <p className="para"> Enhance your user experience with <br></br> <span className="bitword2"> BitWallet</span>, the key to blockchain world</p>
                 <div className="main1Img"><img className="main1" src="/assets/main1.png" /></div>
+                <Link href= '/download'>
                 <button><b>Download</b> <img className="dIcon" src="/assets/download-Icon.png" /></button>
+                </Link>
             </div>
             <div className="image">
                 <img src="/assets/main.png"></img>
             </div>
         </div>
+
         <Slide direction="up" triggerOnce delay={300}>
             <div className="walletContent1">
+                <div className="content1BG"></div>
                 <h1 className="content1-title1" >Secure, Simple, Everywhere </h1>
                 <h1 className="content1-title2" >BitWallet on Browser and Mobile</h1 >
                 <div className="walletInfo1">
@@ -29,7 +33,9 @@ const HomePage = () => {
         </Slide>
 
         <Slide direction="up" triggerOnce delay={300} >
+            <div className="color1"></div>
             <div className="walletContent2">
+            <div className="content2BG"></div>
                 <h1 className="content2-title1" variant="h2">Security for your digital assets</h1>
                 <div className="walletInfo2">
                     <img src="/assets/walletInfo2.png" />
