@@ -37,9 +37,9 @@ const Footer = () => {
                         gap: '0.3rem'
                     }}>
                         <Typography><b>Address :</b></Typography>
-                        <p>3891 Ranchview Dr. Richardson, California 62639</p>
-                        <p>(319) 555-0115</p>
-                        <p>deanna.curtis@example.com</p>
+                        <p>Riyadh 2955, Kingdom of Saudi Arabia</p>
+                        <p>+966 56621 6066</p>
+                        <p>sales@abaadalkhayal.com</p>
                     </Box>
                     <Box className="FooterContent">
                         <Typography><b>Follow us on :</b></Typography>

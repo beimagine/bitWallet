@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* background: radial-gradient(circle, rgba(87, 0, 140, 1) -15%, rgba(2, 0, 28, 1) 60%); */
 }
 
 .title {
@@ -80,7 +79,7 @@
     transform: rotate(-29.63deg);
     border-radius: 30%;
     background: #460370;
-box-shadow: 0px 0px 0px 1px #BBBBBB40;
+    box-shadow: 0px 0px 0px 1px #BBBBBB40;
     z-index: 2;
 }
 
@@ -100,39 +99,6 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
     position: relative;
 }
 
-
-/* .walletContent1::before,
-.walletContent2::before,
-.walletContent3::before {
-    content: "";
-    background-size: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
-.walletContent1::before {
-    background-position: left -100px top -220px;
-    background-image: url("/assets/WCimg2.png");
-    filter: blur(10px);
-}
-
-.walletContent2::before {
-    background-image: url("/assets/WCimg2.png");
-    background-position: left 80px top -120px;
-    background-size: 40%;
-    filter: blur(10px);
-}
-
-.walletContent3::before {
-    background-image: url("/assets/WCimg3.png");
-    background-position: left top -200px;
-    filter: blur(20px);
-} */
 
 .walletInfo1,
 .walletInfo2,
@@ -157,11 +123,9 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
     width: 72%;
 }
 
-.walletInfoImg1 {
+/* .walletInfoImg1 {
     background: radial-gradient(circle, rgba(234, 151, 73, 1) -45%, rgba(2, 0, 28, 1) 71%);
-    /* padding: 6rem 2rem; */
-}
-
+} */
 
 .walletInfo1 p,
 .walletInfo2 p,
@@ -212,21 +176,20 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
     color: #fff;
 }
 
-.Dimg{
+.Dimg {
     z-index: -1;
     width: 100%;
     margin-top: -15%;
     margin-bottom: -15%;
 }
 
-.Dimg img{
+.Dimg img {
     width: 100%;
 }
 
-.footerA{
+.footerA {
     padding: 2rem 0rem;
-    background: linear-gradient(89.97deg, #0097A1 0.22%, #CC7B00 99.97% );
-    /* filter: blur(5px); */
+    background: linear-gradient(89.97deg, #0097A1 0.22%, #CC7B00 99.97%);
     opacity: 0.6;
     margin-bottom: 1rem;
 }
@@ -287,6 +250,7 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
         width: 90%;
         gap: 2rem;
         margin-top: 4rem;
+        text-align: left;
     }
 
     .walletInfoImg1,
@@ -294,13 +258,6 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
     .walletInfo3 img {
         width: 50%;
     }
-
-    /* .walletInfo1 img{
-        width: 100%;
-        height: 60vh;
-        object-fit: contain;
-        padding: 3rem 0rem;
-    } */
 
     .walletInfo1 p,
     .walletInfo2 p,
@@ -324,10 +281,5 @@ box-shadow: 0px 0px 0px 1px #BBBBBB40;
     .walletInfo3 img {
         width: 40%;
     }
-
-    /* .walletInfo1 img{
-        width: 100%;
-        object-fit: contain;
-    } */
 
 }

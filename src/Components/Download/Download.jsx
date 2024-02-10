@@ -3,7 +3,7 @@ import { Slide } from "react-awesome-reveal";
 
 const Download = () => {
     return (
-            <Slide direction="up" triggerOnce delay={300}>
+            <Slide direction="up" triggerOnce delay={500}>
                 <div className="Dsection">
                     <div className="DsectionText">
                     <h1>A more secure and transparent wallet!</h1>

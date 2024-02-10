@@ -89,17 +89,17 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url('/assets/VBG.png'), url('/assets/WCimg2.png'), url('/assets/WCimg2.png') , url('/assets/WCimg3.png') , url('/assets/FBG.png');
+  background: url('/assets/VBG.png'), url('/assets/WCimg2.png'), url('/assets/WCimg2.png') , url('/assets/WCimg3.png') , url('/assets/FBG.png'), url('/assets/imgBG.png');
   background-repeat: no-repeat;
-  background-position: left -30px top -50px , left -80px top 650px , left top 1500px , left 0rem top 140rem , left 41rem top 201rem;
-  background-size: contain, 50%, 50%, 55%, 50%;
+  background-position: left -30px top -50px , left -80px top 650px , left top 1500px , left 0rem top 140rem , left 41rem top 201rem , left 36rem top 50rem;
+  background-size: contain, 50%, 50%, 55%, 50% , 60%;
   filter: opacity(0.8) opacity(0.9); 
   content: "";
 }
 
 body {
   color: #fff;
-  background: #0f0e0e;
+  background: #000;
   z-index: 1;
 }
 
@@ -116,4 +116,20 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+@media only screen and (max-width: 1200px){
+  
+  body::before{
+    background-position: left -30px top 100px , left -50px top 780px , left top 1500px , left 0rem top 125rem , left 31rem top 190rem , left 30rem top 55rem;
+  }
+  
+}
+@media only screen and (max-width: 768px){
+
+  body::before{
+  background-position: left -30px top 100px , left -20px top 600px , left top 1000px , left 0rem top 100rem , left 41rem top 201rem, left 10rem top 42rem;
+  }
+
 }
