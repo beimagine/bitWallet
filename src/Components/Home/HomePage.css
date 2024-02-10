@@ -198,7 +198,7 @@
 @media only screen and (max-width: 768px) {
 
     .vision {
-        padding: 4rem 0rem 8rem 0rem;
+        padding: 4rem 0rem 4rem 0rem;
     }
 
     .title {
@@ -226,6 +226,7 @@
     .walletContent2,
     .walletContent3 {
         margin-top: 0rem;
+        padding: 4rem 0rem;
     }
 
     .content1-title1,
@@ -251,6 +252,11 @@
         gap: 2rem;
         margin-top: 4rem;
         text-align: left;
+        flex-direction: column-reverse;
+    }
+
+    .walletInfo2{
+        flex-direction: column;
     }
 
     .walletInfoImg1,

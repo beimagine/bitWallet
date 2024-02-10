@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+.footerIcons:hover{
+    transform: scale(1.1);
+}
+
 #footerIcons{
     padding-left: 6px;
 }
