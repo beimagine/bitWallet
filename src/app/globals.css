@@ -77,10 +77,33 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "inter", sans-serif;
-  background: #0f0e0e;
+  position: relative;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('/assets/VBG.png'), url('/assets/WCimg2.png'), url('/assets/WCimg2.png') , url('/assets/WCimg3.png') , url('/assets/FBG.png');
+  background-repeat: no-repeat;
+  background-position: left -30px top -50px , left -80px top 650px , left top 1500px , left 0rem top 140rem , left 41rem top 201rem;
+  background-size: contain, 50%, 50%, 55%, 50%;
+  filter: opacity(0.8) opacity(0.9); 
+  content: "";
 }
 
 body {
+  color: #fff;
+  background: #0f0e0e;
+  z-index: 1;
+}
+
+button{
   color: #fff;
 }
 

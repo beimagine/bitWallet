@@ -43,9 +43,15 @@ const Footer = () => {
                     </Box>
                     <Box className="FooterContent">
                         <Typography><b>Follow us on :</b></Typography>
+                        <a href='https://www.instagram.com/bitindiaofficial/' target="blank">
                         <img className="footerIcons" src="/assets/instagram.png"/>
+                        </a>
+                        <a href="https://www.linkedin.com/company/beyond-imagination-technlogies-pvt-ltd/" target="blank">
                         <img className="footerIcons" src="/assets/linkedin.png"/>
+                        </a>
+                        <a href="https://twitter.com/BitIndia_" target="blank">
                         <img className="footerIcons" src="/assets/twitter.png"/>
+                        </a>
                     </Box>
                 </Grid>
             </Grid>

@@ -62,28 +62,6 @@
         display: none;
     }
 
-    /* .mobile-menu {
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        width: 30%;
-        height: 5%;
-        top: 10%;
-        right: 0%;
-        background-color: #6b2288;
-        z-index: 2;
-        border-radius: 5px;
-    }
-
-    .mobile-menu button{
-        font-size: 1rem;
-        background-color: #6b2288;
-        border: none;
-        font-weight: 600;
-    } */
-
     .menu-icon {
         display: block;
     }

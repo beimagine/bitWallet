@@ -20,22 +20,19 @@ const HomePage = () => {
             </div>
         </div>
 
-        <Slide direction="up" triggerOnce delay={300}>
+        <Slide direction="up" triggerOnce delay={500}>
             <div className="walletContent1">
-                <div className="content1BG"></div>
                 <h1 className="content1-title1" >Secure, Simple, Everywhere </h1>
                 <h1 className="content1-title2" >BitWallet on Browser and Mobile</h1 >
                 <div className="walletInfo1">
                     <p>BitWallet, offering a key vault, secure login, and simplified NFT and Crypto storage and transfer, is accessible seamlessly as both a browser extension and a mobile app.</p>
-                    <img src="/assets/walletInfo1.png" />
+                    <img className="walletInfoImg1" src="/assets/walletInfo1.png" />
                 </div>
             </div>
         </Slide>
 
         <Slide direction="up" triggerOnce delay={300} >
-            <div className="color1"></div>
             <div className="walletContent2">
-            <div className="content2BG"></div>
                 <h1 className="content2-title1" variant="h2">Security for your digital assets</h1>
                 <div className="walletInfo2">
                     <img src="/assets/walletInfo2.png" />
@@ -58,15 +55,9 @@ const HomePage = () => {
         <Slide direction="up" triggerOnce delay={300}>
             <Features />
         </Slide>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <div className="Dimg"><img src="/assets/Dimg.png"/></div>
         <Download />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <div className="footerA"></div>
     </>
     )
 }

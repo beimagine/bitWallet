@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: radial-gradient(circle, rgba(87, 0, 140, 1) -15%, rgba(2, 0, 28, 1) 60%);
+    /* background: radial-gradient(circle, rgba(87, 0, 140, 1) -15%, rgba(2, 0, 28, 1) 60%); */
 }
 
 .title {
@@ -80,6 +80,8 @@
     transform: rotate(-29.63deg);
     border-radius: 30%;
     background: #460370;
+box-shadow: 0px 0px 0px 1px #BBBBBB40;
+    z-index: 2;
 }
 
 .image img {
@@ -90,32 +92,47 @@
 .walletContent1,
 .walletContent2,
 .walletContent3 {
-    margin: 8rem 0rem;
+    padding: 8rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 
-.content1BG , .content2BG{
+/* .walletContent1::before,
+.walletContent2::before,
+.walletContent3::before {
+    content: "";
+    background-size: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
     z-index: -1;
-    width: 90%;
-    background: radial-gradient(circle, rgba(26,255,255,1) -90%, rgba(2,0,28,1) 33%);
-    padding: 12rem 0rem;
 }
 
-.content1BG{
-    transform: translateY(100%) translateX(-50%);
-    display: none;
-}
-.content2BG{
-    transform: translateY(85%) translateX(-42%);
-    display: none;
+.walletContent1::before {
+    background-position: left -100px top -220px;
+    background-image: url("/assets/WCimg2.png");
+    filter: blur(10px);
 }
 
+.walletContent2::before {
+    background-image: url("/assets/WCimg2.png");
+    background-position: left 80px top -120px;
+    background-size: 40%;
+    filter: blur(10px);
+}
 
-
+.walletContent3::before {
+    background-image: url("/assets/WCimg3.png");
+    background-position: left top -200px;
+    filter: blur(20px);
+} */
 
 .walletInfo1,
 .walletInfo2,
@@ -124,6 +141,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     gap: 12rem;
 }
 
@@ -139,18 +157,11 @@
     width: 72%;
 }
 
-.walletInfo1 img{
-    background: radial-gradient(circle, rgba(234,151,73,1) -45%, rgba(2,0,28,1) 71%);
-    padding: 6rem 0rem;
+.walletInfoImg1 {
+    background: radial-gradient(circle, rgba(234, 151, 73, 1) -45%, rgba(2, 0, 28, 1) 71%);
+    /* padding: 6rem 2rem; */
 }
 
-.walletInfo2 img{
-    background: radial-gradient(circle, rgba(26,255,255,1) -20%, rgba(2,0,28,1) 75%);
-}
-
-.walletInfo3 img{
-    background: radial-gradient(circle, rgba(234,151,73,1) -35%, rgba(2,0,28,1) 75%);
-}
 
 .walletInfo1 p,
 .walletInfo2 p,
@@ -201,6 +212,24 @@
     color: #fff;
 }
 
+.Dimg{
+    z-index: -1;
+    width: 100%;
+    margin-top: -15%;
+    margin-bottom: -15%;
+}
+
+.Dimg img{
+    width: 100%;
+}
+
+.footerA{
+    padding: 2rem 0rem;
+    background: linear-gradient(89.97deg, #0097A1 0.22%, #CC7B00 99.97% );
+    /* filter: blur(5px); */
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -260,15 +289,18 @@
         margin-top: 4rem;
     }
 
-    .walletInfo1 img,
+    .walletInfoImg1,
     .walletInfo2 img,
     .walletInfo3 img {
         width: 50%;
     }
 
-    .walletInfo1 img{
+    /* .walletInfo1 img{
+        width: 100%;
+        height: 60vh;
+        object-fit: contain;
         padding: 3rem 0rem;
-    }
+    } */
 
     .walletInfo1 p,
     .walletInfo2 p,
@@ -287,9 +319,15 @@
         margin-top: 4rem;
     }
 
-    .walletInfo1 img,
+    .walletInfoImg1,
     .walletInfo2 img,
     .walletInfo3 img {
         width: 40%;
     }
+
+    /* .walletInfo1 img{
+        width: 100%;
+        object-fit: contain;
+    } */
+
 }

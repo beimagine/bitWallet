@@ -39,18 +39,24 @@
 
 @media only screen and (max-width : 768px) {
     .footerDiv {
-        display: none;
+        display: flex;
     }
 
-    /* #footerLogo {
+    #footerLogo {
         text-align: center ;
+        display: flex;
+        justify-content: center;
     }
 
     #footerIcons {
         text-align: center ;
         display: block ;
         margin-top: 1rem;
-    } */
+    }
+
+    .FooterContent{
+        justify-content: center;
+    }
 
     .copyrightText{
         font-size: 0.8rem;
