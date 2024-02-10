@@ -157,13 +157,16 @@
   .cardPara{
     font-size: 0.8rem;
   }
-
 }
 
 @media only screen and (max-width: 460px) {
 
   .box{
     width: 100%;
+  }
+
+  .featuresPara{
+    text-align: left;
   }
 
   .cardInfo{
@@ -182,7 +185,6 @@
   .cardT4 , .cardT5{
     transform: translateY(100%);
   }
-
 }
 
 @media only screen and (max-width: 379px) {
@@ -200,7 +202,6 @@
 
   .box{
     width: 95%;
-    margin: auto ;
-    
+    margin: auto ;  
   }
 }

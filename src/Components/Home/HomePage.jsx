@@ -8,7 +8,7 @@ const HomePage = () => {
     return (<>
         <div className="vision">
             <div className="vision-text">
-                <h1 className="title">Give your NFTs a home <br></br>with <span className="bitWord1">BitWallet</span></h1>
+                <h1 className="title">Give your NFTs a home with <span className="bitWord1">BitWallet</span></h1>
                 <p className="para"> Enhance your user experience with <br></br> <span className="bitword2"> BitWallet</span>, the key to blockchain world</p>
                 <div className="main1Img"><img className="main1" src="/assets/main1.png" /></div>
                 <Link href= '/download'>

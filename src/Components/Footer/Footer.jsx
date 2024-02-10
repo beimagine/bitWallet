@@ -1,8 +1,4 @@
-'use client'
 import { Grid, Box, Typography } from "@mui/material";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./Footer.css";
 
 const Footer = () => {
@@ -38,8 +34,8 @@ const Footer = () => {
                     }}>
                         <Typography><b>Address :</b></Typography>
                         <p>Riyadh 2955, Kingdom of Saudi Arabia</p>
-                        <p>+966 56621 6066</p>
-                        <p>sales@abaadalkhayal.com</p>
+                        <p className="F2l">+966 56621 6066</p>
+                        <p className="F3l">sales@abaadalkhayal.com</p>
                     </Box>
                     <Box className="FooterContent">
                         <Typography><b>Follow us on :</b></Typography>

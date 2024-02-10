@@ -1,23 +1,42 @@
 'use client';
-import React, { useState } from 'react';
-import { KeyboardReturn } from '@mui/icons-material';
+import React, { useState, useEffect } from 'react';
+import { slide as Menu } from "react-burger-menu"
 import { useRouter, usePathname } from 'next/navigation';
 import './Navbar.css';
 
-const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const router = useRouter();
+const Navbar = (props) => {
   const pathname = usePathname();
-  console.log(pathname);
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setShowMenu((prevShowMenu) => !prevShowMenu);
+  const handleStateChange = (state) => setMenuOpen(state.isOpen);
+
+  const closeMenu = () => setMenuOpen(false);
+
+  const handleButtonClick = (route) => {
+      router.push(route);
+      closeMenu();
   };
 
-  const handleNavButtonClick = () => {
-    setShowMenu(false);
-  };
+  useEffect(() => {
+      const handleOutsideClick = (event) => {
+          if (menuOpen && !event.target.closest(".bm-menu-wrap")) {
+              closeMenu();
+          }
+      };
+      document.addEventListener("click", handleOutsideClick);
+
+      return () => {
+          document.removeEventListener("click", handleOutsideClick);
+      };
+  }, [menuOpen]);
+
+  useEffect(() => {
+      document.body.classList.toggle("menu-open", menuOpen);
+      return () => {
+          document.body.classList.remove("menu-open");
+      };
+  }, [menuOpen]);
 
   return (
     <div className="navbar">
@@ -29,28 +48,25 @@ const Navbar = () => {
       </div>
       <div className='nav-items'>
         {pathname === '/download' ? (
-          <button onClick={() => { router.push('/'); handleNavButtonClick(); }}>Home</button>
+          <button onClick={() => handleButtonClick('/')}>Home</button>
         ) : (
-          <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}>Download</button>
+          <button onClick={() => handleButtonClick('/download')}>Download</button>
         )}
       </div>
-      <div className="menu-icon" onClick={toggleMenu}>
-      {pathname === '/download' ? (
-          <button className='returnIcon' onClick={() => { router.push('/'); handleNavButtonClick(); }}><KeyboardReturn /></button>
-        ) : (
-        <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}><img src='/assets/download-Icon.png'/></button>
+
+<div className='sidebar'>
+      <Menu right disableOverlayClick isOpen={menuOpen} onStateChange={handleStateChange}>
+        {menuOpen && (
+          <div className="mobile-menu">
+            {pathname === '/download' ? (
+              <button onClick={() => handleButtonClick('/')}>Home</button>
+            ) : (
+              <button onClick={() => handleButtonClick('/download')}>Download</button>
+            )}
+          </div>
         )}
+      </Menu>
       </div>
-      {/* Render the menu based on the showMenu state */}
-      {/* {showMenu && (
-        <div className="mobile-menu">
-        {pathname === '/download' ? (
-          <button onClick={() => { router.push('/'); handleNavButtonClick(); }}>Home</button>
-        ) : (
-          <button onClick={() => { router.push('/download'); handleNavButtonClick(); }}>Download</button>
-        )}
-        </div>
-      )} */}
     </div>
   );
 };

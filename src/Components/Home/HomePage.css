@@ -108,7 +108,7 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    gap: 12rem;
+    gap: 4rem;
 }
 
 .walletInfo1 {
@@ -123,14 +123,14 @@
     width: 72%;
 }
 
-/* .walletInfoImg1 {
-    background: radial-gradient(circle, rgba(234, 151, 73, 1) -45%, rgba(2, 0, 28, 1) 71%);
-} */
-
 .walletInfo1 p,
 .walletInfo2 p,
 .walletInfo3 p {
     font-size: 1.3rem;
+}
+
+.walletInfoImg1{
+    margin-right: -5%;
 }
 
 .content1-title1 {
@@ -260,10 +260,10 @@
         flex-direction: column;
     }
 
-    .walletInfoImg1,
+    .walletInfo1 img,
     .walletInfo2 img,
     .walletInfo3 img {
-        width: 50%;
+        width: 60%;
     }
 
     .walletInfo1 p,
@@ -296,6 +296,10 @@
     .content3-title2{
         text-align: center;
         padding: 0rem 2rem;
+    }
+
+    br{
+        display: none;
     }
 }
 

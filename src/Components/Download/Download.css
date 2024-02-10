@@ -95,3 +95,18 @@
         padding: 0.6rem 0.8rem;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .DsectionText h1{
+        text-align: center;
+    }
+    .DsectionText p{
+        text-align: center;
+    }
+
+    .Btext , .browserButton1{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

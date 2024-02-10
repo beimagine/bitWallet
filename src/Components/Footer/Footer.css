@@ -53,7 +53,8 @@
     }
 
     #footerIcons {
-        text-align: center ;
+        text-align: left ;
+        margin-left: 10%;        
         display: block ;
         margin-top: 1rem;
     }
