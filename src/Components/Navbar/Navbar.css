@@ -70,7 +70,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #fff;
+        border: none;
         border-radius: 10px;
         background: transparent;
         padding: 8px 6px;
