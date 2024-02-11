@@ -55,7 +55,7 @@ const Navbar = (props) => {
       </div>
 
 <div className='sidebar'>
-      <Menu right disableOverlayClick isOpen={menuOpen} onStateChange={handleStateChange}>
+      <Menu right disableOverlayClick isOpen={menuOpen} onStateChange={handleStateChange} width={'180px'}>
         {menuOpen && (
           <div className="mobile-menu">
             {pathname === '/download' ? (
