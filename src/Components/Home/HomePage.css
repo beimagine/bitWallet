@@ -95,7 +95,7 @@
 .walletContent1,
 .walletContent2,
 .walletContent3 {
-    padding: 0rem 2rem;
+    padding: 22rem 2rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -336,6 +336,7 @@
     .walletContent1{
         height: auto;
         padding-bottom: 4rem ;
+        padding-top: 2rem;
     }
 
 }
