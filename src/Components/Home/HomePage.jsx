@@ -20,7 +20,7 @@ const HomePage = () => {
             </div>
         </div>
 
-        <Slide direction="up" triggerOnce duration={2000} >
+        <Slide direction="left" triggerOnce duration={2000} >
             <div className="walletContent1">
                 <h1 className="content1-title1" >Secure, Simple, Everywhere </h1>
                 <h1 className="content1-title2" >BitWallet on Browser and Mobile</h1 >
@@ -31,7 +31,7 @@ const HomePage = () => {
             </div>
         </Slide>
 
-        <Slide direction="up" triggerOnce  duration={2000}  >
+        <Slide direction="right" triggerOnce  duration={2000}  >
             <div className="walletContent2">
                 <h1 className="content2-title1" variant="h2">Security for your digital assets</h1>
                 <div className="walletInfo2">
@@ -41,7 +41,7 @@ const HomePage = () => {
             </div>
         </Slide>
 
-        <Slide direction="up" triggerOnce  duration={2000} >
+        <Slide direction="left" triggerOnce  duration={2000} >
             <div className="walletContent3">
                 <h1 className="content3-title1" variant="h2">Zero downtime </h1>
                 <h1 className="content3-title2" variant="h2">Continuous Operation without Interruption</h1 >
@@ -52,9 +52,9 @@ const HomePage = () => {
             </div>
         </Slide>
 
-        <Slide direction="up" triggerOnce  duration={2000} >
+        {/* <Slide direction="up" triggerOnce  duration={2000} > */}
             <Features />
-        </Slide>
+        {/* </Slide> */}
         <div className="Dimg"><img src="/assets/Dimg.png"/></div>
         <Download />
         <div className="footerA"></div>

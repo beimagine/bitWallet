@@ -87,7 +87,7 @@
 .bm-burger-button {
     position: absolute;
     width: 25px;
-    height: 20px;
+    height: 18px;
     top: 23px;
     right: 22px;
     cursor: pointer;
@@ -95,6 +95,7 @@
 
 .bm-burger-bars {
     background: #fff;
+    border-radius: 10px;
 }
 
 .bm-menu {
