@@ -2,7 +2,7 @@
   border-radius: 102px;
   width: 90%;
   padding: 6rem 6rem;
-  margin: 5rem ;
+  margin: 5rem;
   background-color: #6E3289;
   outline: 2px solid transparent;
   box-shadow: 5px 7px 30px 0px rgba(176, 0, 255, 1);
@@ -81,7 +81,7 @@
   transform: translateY(-30%);
 }
 
-.card:hover .cardT5{
+.card:hover .cardT5 {
   transform: translateY(-15%);
 }
 
@@ -96,7 +96,8 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.cardT4 , .cardT5 {
+.cardT4,
+.cardT5 {
   transform: translateY(150%);
 }
 
@@ -119,7 +120,7 @@
 
 
 @media only screen and (max-width: 768px) {
-  
+
   .card {
     width: 100%;
   }
@@ -144,64 +145,86 @@
     box-shadow: none;
   }
 
-  .allcards{
+  .allcards {
     display: flex;
     flex-direction: column;
     gap: 3rem;
   }
 
-  .cardTitle{
+  .cardTitle {
     font-size: 1.2rem;
   }
 
-  .cardPara{
+  .cardPara {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 460px) {
 
-  .box{
+  .box {
     width: 100%;
   }
 
-  .featuresPara{
+  .featuresPara {
     text-align: left;
   }
 
-  .cardInfo{
+  .cardInfo {
     padding: 1rem;
   }
 
-  .cardTitle{
+  .cardTitle {
     font-size: 1.1rem;
     transform: translateY(230%);
   }
 
-  .cardPara{
+  .cardPara {
     font-size: 0.6rem;
   }
 
-  .cardT4 , .cardT5{
+  .cardT4,
+  .cardT5 {
     transform: translateY(100%);
   }
 }
 
 @media only screen and (max-width: 379px) {
 
-  .cardTitle{
+  .cardTitle {
     transform: translateY(50%);
   }
 
-  .card:hover .cardTitle{
+  .card:hover .cardTitle {
     display: none;
   }
 }
 
 @media only screen and (max-width: 1500px) {
 
-  .box{
+  .box {
     width: 95%;
-    margin: auto ;  
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1330px) and (max-width: 1416px) {
+  .cardT2,
+  .cardT6 {
+    transform: translateY(145%);
+  }
+}
+
+@media only screen and (min-width: 923px) and (max-width: 982px) {
+  .cardT2,
+  .cardT6 {
+    transform: translateY(150%);
+  }
+}
+
+@media only screen and (min-width: 1830px) and (max-width: 1955px) {
+  .cardT2,
+  .cardT6 {
+    transform: translateY(150%);
   }
 }
