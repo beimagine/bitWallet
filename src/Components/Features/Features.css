@@ -6,6 +6,7 @@
   background-color: #6E3289;
   outline: 2px solid transparent;
   box-shadow: 5px 7px 30px 0px rgba(176, 0, 255, 1);
+  z-index: 2;
 }
 
 .featuresTitle {
@@ -129,6 +130,7 @@
     font-size: 1.8rem;
   }
 
+
   .featuresPara {
     font-size: 0.8rem;
     width: 80%;
@@ -167,7 +169,7 @@
   }
 
   .featuresPara {
-    text-align: left;
+    text-align: center;
   }
 
   .cardInfo {

@@ -83,7 +83,6 @@
     border-radius: 30%;
     background: linear-gradient(135.73deg, rgba(37, 2, 74, 0.2) 55.61%, rgba(37, 3, 72, 0.2) 98.55%),
         linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-    z-index: 2;
     box-shadow: 5px 9px 10px 0px rgba(187, 187, 187, 0.25);
 }
 
@@ -260,7 +259,7 @@
         width: 90%;
         gap: 2rem;
         margin-top: 4rem;
-        text-align: left;
+        text-align: center;
         flex-direction: column-reverse;
     }
 

@@ -3,7 +3,6 @@ import { Slide } from "react-awesome-reveal";
 
 const Download = () => {
     return (
-            <Slide direction="up" triggerOnce delay={500}>
                 <div className="Dsection">
                     <div className="DsectionText">
                     <h1>A more secure and transparent wallet!</h1>
@@ -15,7 +14,6 @@ const Download = () => {
                     </div>
                     <button className="browserButton"><div className="browserButton1"><span style={{ fontSize: '0.7rem', fontWeight: '700' }}>Download as your</span> <br></br> <span style={{ fontSize: '1.5rem', fontWeight: '700' }}>Browser Extension</span></div></button>
                 </div>
-            </Slide>
     );
 };
 

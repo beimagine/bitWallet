@@ -48,9 +48,9 @@ const Navbar = (props) => {
       </div>
       <div className='nav-items'>
         {pathname === '/download' ? (
-          <button onClick={() => handleButtonClick('/')}>Home</button>
+          <button onClick={() => handleButtonClick('/')}><span className='NBtext'>Home</span></button>
         ) : (
-          <button onClick={() => handleButtonClick('/download')}>Download</button>
+          <button onClick={() => handleButtonClick('/download')}><span className='NBtext'>Download</span></button>
         )}
       </div>
 

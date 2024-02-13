@@ -18,10 +18,11 @@
 .nav-items {
     display: flex;
     margin-right: 5rem;
+    border-radius: 10px;
 }
 
 .nav-items button {
-    background: transparent;
+    background: #000;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 0.7rem 1.3rem;
@@ -29,25 +30,37 @@
     font-size: 1.1rem;
     transition: border-color 0.3s ease;
     font-weight: 600;
+    color: #fff;
 }
 
-.nav-items button:hover {
-    border: 2px solid #ff00b8;
-    background: linear-gradient(90deg, #0066FF 0%, #FF00B8 100%);
+.nav-items:hover button{
+    border: transparent;
+}
+
+.nav-items:hover .NBtext{
     color: transparent;
+    background: linear-gradient(90deg, #0066FF 0%, #FF00B8 100%);
     -webkit-background-clip: text;
+}
+
+.nav-items:hover {
+    /* background: linear-gradient(90deg, #0066FF 0%, #FF00B8 100%); */
+    border: 2px solid transparent;
     transform: scale(1.05);
+    border-radius: 10px;
+    background: #FF00B8;
+    background-repeat: no-repeat;
 }
 
 .menu-icon {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
 }
 
-.sidebar{
+.sidebar {
     display: none;
 }
 
@@ -70,45 +83,45 @@
         display: block;
     }
 
-    .mobile-menu.show{
+    .mobile-menu.show {
         display: block;
     }
 
-    .returnIcon{
+    .returnIcon {
         display: flex;
         justify-content: center;
     }
 
-    
-    .sidebar{
-    display: block;
-}
 
-.bm-burger-button {
-    position: absolute;
-    width: 25px;
-    height: 18px;
-    top: 23px;
-    right: 22px;
-    cursor: pointer;
-}
+    .sidebar {
+        display: block;
+    }
 
-.bm-burger-bars {
-    background: #fff;
-    border-radius: 10px;
-}
+    .bm-burger-button {
+        position: absolute;
+        width: 25px;
+        height: 18px;
+        top: 23px;
+        right: 22px;
+        cursor: pointer;
+    }
 
-.bm-menu {
-    background: rgba(0, 0, 0, 0.6);
-    margin-top: -8%;
-}
+    .bm-burger-bars {
+        background: #fff;
+        border-radius: 10px;
+    }
 
-.mobile-menu button{
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    transform: translatey(80px) translateX(35px);
-}
+    .bm-menu {
+        background: rgba(0, 0, 0, 0.6);
+        margin-top: -8%;
+    }
+
+    .mobile-menu button {
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        transform: translatey(80px) translateX(35px);
+    }
 }
