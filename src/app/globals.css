@@ -91,7 +91,7 @@ body::before {
   z-index: -1;
   background: url('/assets/VBG.png'), url('/assets/WCimg2.png'), url('/assets/WCimg2.png') , url('/assets/WCimg3.png') , url('/assets/FBG.png'), url('/assets/imgBG.png'), #000;
   background-repeat: no-repeat;
-  background-position: left -60px top 0px , left -80px top 600px , left top 1300px , left 0rem top 120rem , left 40rem top 179rem , left 39rem top 49rem;
+  background-position: left -50px top 0px , left -80px top 600px , left top 1300px , left 0rem top 120rem , left 40rem top 179rem , left 39rem top 49rem;
   background-size: 100%, 50%, 50%, 55%, 52% , 58%;
   content: "";
 }
