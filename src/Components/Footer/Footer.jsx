@@ -33,9 +33,10 @@ const Footer = () => {
                         gap: '0.3rem'
                     }}>
                         <Typography><b>Address :</b></Typography>
-                        <p>Riyadh 2955, Kingdom of Saudi Arabia</p>
-                        <p className="F2l">+966 56621 6066</p>
-                        <p className="F3l">sales@abaadalkhayal.com</p>
+                        <p>Beyond Imagination Tech LLC</p>
+                        <p>M03 Laffa restaurant building,</p>
+                        <p className="F2l">Sheikh Khalifa Bin Zayed St - Opp. Burjuman Mall,</p>
+                        <p className="F3l">Dubai, United Arab Emirates</p>
                     </Box>
                     <Box className="FooterContent">
                         <Typography><b>Follow us on :</b></Typography>

@@ -41,13 +41,13 @@ const HomePage = () => {
                 <h1 className="content3-title1" variant="h2">Zero downtime </h1>
                 <h1 className="content3-title2" variant="h2">Continuous Operation without Interruption</h1 >
                 <div className="walletInfo3">
-                    <p>The Web3 and blockchain revolution is ushering in an era of continuous and secure digital operations, eliminating downtime and transforming the landscape of online systems</p>
+                    <p>The Web3 and blockchain revolution is ushering in an era of continuous and secure digital operations, eliminating downtime and transforming the landscape of online systems.</p>
                     <img src="/assets/walletInfo3.png" />
                 </div>
             </div>
 
             <Features />
-            
+
         <div className="Dimg"><img src="/assets/Dimg.png"/></div>
         <Download />
         <div className="footerA"></div>
