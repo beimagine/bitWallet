@@ -10,32 +10,32 @@ const cardData = [
     {
         imageSrc: '/assets/F2.png',
         title: "Data Protection",
-        para: "Effortless and intuitive, designed for a seamless user experience",
+        para: "Advanced encryption techniques safeguarding sensitive user information",
         classname: "cardT2"
     },
     {
         imageSrc: '/assets/F3.png',
         title: "Decentralized",
-        para: "Effortless and intuitive, designed for a seamless user experience",
+        para: "Increased user control and reduced dependency on centralized authorities",
         classname: "cardT3"
     },
     {
         imageSrc: '/assets/F4.png',
         title: "Verified and Secured",
-        para: "Trustworthy and guaranteed for your security",
+        para: "Trustworthy & cutting-edge security protocols ensuring safety of users' funds and data",
         classname: "cardT4"
 
     },
     {
         imageSrc: '/assets/F5.png',
         title: "Robust Infrastructure",
-        para: "Effortless and intuitive, designed for a seamless user experience",
+        para: "Resilient and reliable infrastructure providing uninterrupted transaction processing",
         classname: "cardT5"
     },
     {
         imageSrc: '/assets/F6.png',
         title: "Support Assets",
-        para: "Effortless and intuitive, designed for a seamless user experience",
+        para: "Comprehensive support for wide range of digital assets, enabling seamless management",
         classname: "cardT6"
     },
 ];
