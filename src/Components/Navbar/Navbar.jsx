@@ -14,29 +14,35 @@ const Navbar = (props) => {
   const closeMenu = () => setMenuOpen(false);
 
   const handleButtonClick = (route) => {
-      router.push(route);
-      closeMenu();
+    router.push(route);
+    closeMenu();
   };
 
   useEffect(() => {
-      const handleOutsideClick = (event) => {
-          if (menuOpen && !event.target.closest(".bm-menu-wrap")) {
-              closeMenu();
-          }
-      };
-      document.addEventListener("click", handleOutsideClick);
+    const handleOutsideClick = (event) => {
+      if (menuOpen && !event.target.closest(".bm-menu-wrap")) {
+        closeMenu();
+      }
+    };
+    document.addEventListener("click", handleOutsideClick);
 
-      return () => {
-          document.removeEventListener("click", handleOutsideClick);
-      };
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
   }, [menuOpen]);
 
   useEffect(() => {
-      document.body.classList.toggle("menu-open", menuOpen);
-      return () => {
-          document.body.classList.remove("menu-open");
-      };
+    document.body.classList.toggle("menu-open", menuOpen);
+    return () => {
+      document.body.classList.remove("menu-open");
+    };
   }, [menuOpen]);
+
+  const error = console.error;
+  console.error = (...args) => {
+    if (/defaultProps/.test(args[0])) return;
+    error(...args);
+  };
 
   return (
     <div className="navbar">
@@ -54,18 +60,18 @@ const Navbar = (props) => {
         )}
       </div>
 
-<div className='sidebar'>
-      <Menu right disableOverlayClick isOpen={menuOpen} onStateChange={handleStateChange} width={'180px'}>
-        {menuOpen && (
-          <div className="mobile-menu">
-            {pathname === '/download' ? (
-              <button onClick={() => handleButtonClick('/')}>Home</button>
-            ) : (
-              <button onClick={() => handleButtonClick('/download')}>Download</button>
-            )}
-          </div>
-        )}
-      </Menu>
+      <div className='sidebar'>
+        <Menu right disableOverlayClick isOpen={menuOpen} onStateChange={handleStateChange} width={'180px'}>
+          {menuOpen && (
+            <div className="mobile-menu">
+              {pathname === '/download' ? (
+                <button onClick={() => handleButtonClick('/')}>Home</button>
+              ) : (
+                <button onClick={() => handleButtonClick('/download')}>Download</button>
+              )}
+            </div>
+          )}
+        </Menu>
       </div>
     </div>
   );
