@@ -44,7 +44,6 @@
 }
 
 .nav-items:hover {
-    /* background: linear-gradient(90deg, #0066FF 0%, #FF00B8 100%); */
     border: 2px solid transparent;
     transform: scale(1.05);
     border-radius: 10px;

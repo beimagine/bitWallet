@@ -54,9 +54,8 @@ const Features = () => {
         <>
             <div className='featuresHeader'>
                 <h1 className='featuresTitle'>Why choose BitWallet</h1>
-                <p className='featuresPara'>Bitwallet ensures secure storage and easy management of digital assets, providing users with peace of mind and convenient access to their cryptocurrencies.</p>
+                <p className='featuresPara'>Bitwallet ensures secure storage and easy management of digital assets, providing users with peace of mind and convenient access to their collectibles.</p>
                 <div className='box'>
-
                     <div className='allcards'>
                         {cardData.map((card, index) => (
                             <div className={`card ${index === 3 || index === 4 ? 'special-card' : ''}`} key={index} >
