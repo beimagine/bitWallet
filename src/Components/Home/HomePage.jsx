@@ -25,7 +25,7 @@ const HomePage = () => {
                 <h1 className="content1-title1" >Secure, Simple, Everywhere </h1>
                 <h1 className="content1-title2" >BitWallet on Browser and Mobile</h1 >
                 <div className="walletInfo1">
-                    <p>BitWallet, offering a key vault, secure login, and simplified NFT and crypto storage and transfer, is seamlessly accessible as both a browser extension and a mobile app.</p>
+                    <p>BitWallet, offering a key vault, secure login, and simplified NFT storage and transfer, is seamlessly accessible as both a browser extension and a mobile app.</p>
                     <img className="walletInfoImg1" src="/assets/walletInfo1.png" />
                 </div>
             </div>

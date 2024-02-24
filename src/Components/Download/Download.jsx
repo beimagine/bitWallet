@@ -10,7 +10,7 @@ const Download = () => {
         <div className="Dsection">
             <div className="DsectionText">
                 <h1>A more secure and transparent wallet!</h1>
-                <p>BitWallet: Manage your digital assets securely on iOS, Android, and in your browser – all in one place</p>
+                <p>BitWallet : Your All-in-One Solution for Digital Asset Management</p>
             </div>
             <div className="buttons">
                 <button onClick={() => openLinkInNewTab('https://apps.apple.com/in/app/be-imagine-technology-wallet/id6443855034')}>
